@@ -14,8 +14,8 @@ const overrides = {
             body: {
                 bg: mode("white", "gray.800")(props),
                 bgGradient: mode(
-                    "linear(to-b, green.200, pink.500)",
-                    "linear(to-b, teal.500, gray.800)"
+                    "linear(to-b, gray.300, orange.200)",
+                    "linear(to-b, teal.600, gray.800)"
                 )(props),
             },
         }),
