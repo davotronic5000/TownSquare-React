@@ -9,6 +9,7 @@ import {
     Button,
 } from "@chakra-ui/react";
 import { ComponentType, useState } from "react";
+import Token from "../tokens/Token";
 
 enum TownsquareStatus {
     Player = "PLAYER",
@@ -22,6 +23,7 @@ const Townsquare: ComponentType = () => {
     );
     return (
         <Box>
+            <Token name="Soldier" url={new URL("https://clocktower.online/img/soldier.ebde76f0.png")} color="red"/>
             <Card>
                 <CardHeader>
                     <Heading>Welcome to the Townsquare Tool</Heading>
