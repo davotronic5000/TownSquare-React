@@ -2,6 +2,7 @@
     "recommendations": [
         "esbenp.prettier-vscode",
         "dbaeumer.vscode-eslint",
-        "gamunu.vscode-yarn"
+        "gamunu.vscode-yarn",
+        "cschleiden.vscode-github-actions"
     ]
 }
