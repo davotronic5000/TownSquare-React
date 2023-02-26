@@ -23,7 +23,16 @@ const Townsquare: ComponentType = () => {
     );
     return (
         <Box>
-            <Token name="Soldier" url={new URL("https://clocktower.online/img/soldier.ebde76f0.png")} color="red"/>
+            <Token
+                name="Soldier"
+                url={
+                    new URL(
+                        "https://clocktower.online/img/soldier.ebde76f0.png"
+                    )
+                }
+                color="red"
+                size={200}
+            />
             <Card>
                 <CardHeader>
                     <Heading>Welcome to the Townsquare Tool</Heading>
