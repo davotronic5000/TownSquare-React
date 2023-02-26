@@ -1,5 +1,6 @@
 name: Run Prettier Check
 on:
+    workflow_dispatch:
     pull_request:
         branches: [main, develop]
 jobs:
@@ -9,11 +10,8 @@ jobs:
         steps:
             - name: Checkout
               uses: actions/checkout@v3
-              with:
-                  ref: ${{github.head_ref}}
-                  fetch-depth: 0
 
             - name: Prettier Action
               uses: creyD/prettier_action@v4.3
               with:
-                  dry: true
+                  prettier_options: --check **/*.{js,md}
