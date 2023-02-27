@@ -31,8 +31,8 @@ const Townsquare: ComponentType = () => {
                     )
                 }
                 color="red"
-                size={200}
             />
+
             <Card>
                 <CardHeader>
                     <Heading>Welcome to the Townsquare Tool</Heading>
