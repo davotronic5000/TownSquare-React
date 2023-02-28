@@ -1,12 +1,13 @@
 import { ComponentType } from "react";
 import { TokenProps } from "./types";
-import { Box, Image, Text } from "@chakra-ui/react";
+import { Box, Image } from "@chakra-ui/react";
+import * as token from "../assets/token.png";
 
 const Token: ComponentType<TokenProps> = ({ name, url, color }) => {
     return (
         <Box
             borderRadius="50%"
-            bgImage="url('https://clocktower.online/img/token.d0b9dbdf.png')"
+            bgImage={token.default}
             width="100%"
             bgSize="100%"
             boxShadow="dark-lg"
